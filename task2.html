@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System</title>
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="/task2.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <h2> <span>Kings</span> Lal Kila <span>Dhaba</span> </h2>
+        </div>
+        <div class="form">
+            <div class="personal-info">
+                <h3>Personal Information :</h3>
+                Full name &nbsp;&nbsp;: <input type="text" id="name"><br>
+                Your Email : <input type="email" id="email">
+            </div>
+            <div class="order">
+                <h3>Your Order :</h3>
+
+                <div class="span1">
+                    Fried rice(70rs) : <input type="text" placeholder="Enter Your Quantity" id="rice"><br>
+                    Noodles(70rs) &nbsp;: <input type="email" placeholder="Enter Your Quantity" id="noodles"><br>
+                </div>
+                <div class="span2">
+                    Biryani(220rs)&nbsp;&nbsp;&nbsp;: <input type="text" placeholder="Enter Your Quantity"
+                        id="biryani"><br>
+                    Samosa(15rs)&nbsp;&nbsp;&nbsp; : <input type="email" placeholder="Enter Your Quantity" id="samosa">
+                </div>
+            </div>
+            <div class="bill">
+                <h3>Your Bill :</h3>
+                <h4>Your Name : <span id="name2"></span></h4>
+                <h4>Your Email : <span id="email2"></span></h4>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Menu</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bill-data">
+
+                    </tbody>
+
+                </table>
+                <h2>Total= <span id="total">0</span>rs.</h2>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- custom js file link  -->
+    <script src="/task2.js"></script>
+</body>
+
+</html>
